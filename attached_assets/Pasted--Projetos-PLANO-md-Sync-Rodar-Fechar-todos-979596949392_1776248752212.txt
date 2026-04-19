@@ -1,0 +1,1248 @@
+âï¸
+
+
+Projetos
+
+
+PLANO.md
+
+Sync
+Rodar
+
+Fechar todos
+9795969493929190898887868584838281807978777675
+â¬ Terminal
+ð Preview
+â¬ Ampliar
+
+ð¨
+Compilar
+Rodar
+
+ð
+Preview
+
+Markdown
+PLANO.md
+
+Tela Cheia
+PLANO DO PROJETO: skprojetocompleto (cÃ³pia)
+
+Gerado automaticamente pelo SK Code Editor em 15/04/2026, 07:21:02
+130 arquivo(s) | ~51.195 linhas de codigo
+
+
+RESUMO EXECUTIVO
+
+Tipo de aplicacao: Full-Stack (React + Express)
+Frontend / Stack principal: React + Vite, TypeScript, Tailwind CSS, Python
+Backend / Dados: Node.js + Express, PostgreSQL, Drizzle ORM
+Versao: 1.0.0
+Para rodar o projeto:
+
+npm install && npm run dev
+
+
+ESTRUTURA DE ARQUIVOS
+
+skprojetocompleto (cÃ³pia)/
+âââ client/
+â   âââ public/
+â   â   âââ auditoria.html
+â   â   âââ codigo-formatacao.txt
+â   â   âââ favicon.png
+â   â   âââ manifest.json
+â   â   âââ sw.js
+â   âââ replit_integrations/
+â   â   âââ audio/
+â   â       âââ audio-playback-worklet.js
+â   â       âââ audio-utils.ts
+â   â       âââ index.ts
+â   â       âââ useAudioPlayback.ts
+â   â       âââ useVoiceRecorder.ts
+â   â       âââ useVoiceStream.ts
+â   âââ src/
+â   â   âââ components/
+â   â   â   âââ ui/
+â   â   â   â   âââ accordion.tsx
+â   â   â   â   âââ alert-dialog.tsx
+â   â   â   â   âââ alert.tsx
+â   â   â   â   âââ aspect-ratio.tsx
+â   â   â   â   âââ avatar.tsx
+â   â   â   â   âââ badge.tsx
+â   â   â   â   âââ breadcrumb.tsx
+â   â   â   â   âââ button.tsx
+â   â   â   â   âââ calendar.tsx
+â   â   â   â   âââ card.tsx
+â   â   â   â   âââ carousel.tsx
+â   â   â   â   âââ chart.tsx
+â   â   â   â   âââ checkbox.tsx
+â   â   â   â   âââ collapsible.tsx
+â   â   â   â   âââ command.tsx
+â   â   â   â   âââ context-menu.tsx
+â   â   â   â   âââ dialog.tsx
+â   â   â   â   âââ drawer.tsx
+â   â   â   â   âââ dropdown-menu.tsx
+â   â   â   â   âââ form.tsx
+â   â   â   â   âââ hover-card.tsx
+â   â   â   â   âââ input-otp.tsx
+â   â   â   â   âââ input.tsx
+â   â   â   â   âââ label.tsx
+â   â   â   â   âââ menubar.tsx
+â   â   â   â   âââ navigation-menu.tsx
+â   â   â   â   âââ pagination.tsx
+â   â   â   â   âââ popover.tsx
+â   â   â   â   âââ progress.tsx
+â   â   â   â   âââ radio-group.tsx
+â   â   â   â   âââ resizable.tsx
+â   â   â   â   âââ scroll-area.tsx
+â   â   â   â   âââ select.tsx
+â   â   â   â   âââ separator.tsx
+â   â   â   â   âââ sheet.tsx
+â   â   â   â   âââ sidebar.tsx
+â   â   â   â   âââ skeleton.tsx
+â   â   â   â   âââ slider.tsx
+â   â   â   â   âââ switch.tsx
+â   â   â   â   âââ table.tsx
+â   â   â   â   âââ tabs.tsx
+â   â   â   â   âââ textarea.tsx
+â   â   â   â   âââ toast.tsx
+â   â   â   â   âââ toaster.tsx
+â   â   â   â   âââ toggle-group.tsx
+â   â   â   â   âââ toggle.tsx
+â   â   â   â   âââ tooltip.tsx
+â   â   â   âââ pwa-install.tsx
+â   â   â   âââ theme-provider.tsx
+â   â   â   âââ theme-toggle.tsx
+â   â   â   âââ tiptap-editor.tsx
+â   â   âââ hooks/
+â   â   â   âââ use-mobile.tsx
+â   â   â   âââ use-toast.ts
+â   â   âââ lib/
+â   â   â   âââ queryClient.ts
+â   â   â   âââ utils.ts
+â   â   âââ pages/
+â   â   â   âââ auditoria-financeira.tsx
+â   â   â   âââ code-assistant.tsx
+â   â   â   âââ comparador-juridico.tsx
+â   â   â   âââ comunicacoes-cnj.tsx
+â   â   â   âââ consulta-corporativo.tsx
+â   â   â   âââ consulta-pdpj.tsx
+â   â   â   âââ consulta-processual.tsx
+â   â   â   âââ filtrador.tsx
+â   â   â   âââ jurisprudencia.tsx
+â   â   â   âââ legal-assistant.tsx
+â   â   â   âââ legal-assistant.tsx.recovered
+â   â   â   âââ login.tsx
+â   â   â   âââ not-found.tsx
+â   â   â   âââ painel-processos.tsx
+â   â   â   âââ playground.tsx
+â   â   â   âââ previdenciario.tsx
+â   â   â   âââ robo-djen.tsx
+â   â   â   âââ token-generator.tsx
+â   â   â   âââ tramitacao.tsx
+â   â   âââ App.tsx
+â   â   âââ index.css
+â   â   âââ main.tsx
+â   âââ index.html
+âââ migrations/
+â   âââ meta/
+â   â   âââ _journal.json
+â   â   âââ 0000_snapshot.json
+â   âââ 0000_init.sql
+âââ public/
+â   âââ auditoria.html
+âââ script/
+â   âââ build.ts
+âââ server/
+â   âââ replit_integrations/
+â   â   âââ audio/
+â   â   â   âââ client.ts
+â   â   â   âââ index.ts
+â   â   â   âââ routes.ts
+â   â   âââ batch/
+â   â   â   âââ index.ts
+â   â   â   âââ utils.ts
+â   â   âââ chat/
+â   â   â   âââ index.ts
+â   â   â   âââ routes.ts
+â   â   â   âââ storage.ts
+â   â   âââ image/
+â   â       âââ client.ts
+â   â       âââ index.ts
+â   â       âââ routes.ts
+â   âââ db.ts
+â   âââ djen.ts
+â   âââ index.ts
+â   âââ routes.ts
+â   âââ static.ts
+â   âââ storage.ts
+â   âââ vite.ts
+âââ shared/
+â   âââ models/
+â   â   âââ chat.ts
+â   âââ schema.ts
+âââ .gitignore
+âââ components.json
+âââ drizzle.config.ts
+âââ fix_buttons.txt
+âââ main.py
+âââ package-lock.json
+âââ package.json
+âââ postcss.config.js
+âââ pyproject.toml
+âââ README.md
+âââ RELATORIO_CORRECOES.md
+âââ replit.md
+âââ SECURITY.md
+âââ tailwind.config.ts
+âââ tsconfig.json
+âââ vite.config.ts
+
+
+STACK TECNOLOGICO DETECTADO
+
+Frontend: React + Vite, TypeScript, Tailwind CSS, Python
+Backend: Node.js + Express, PostgreSQL, Drizzle ORM
+Todos os pacotes (116): @google/genai, @hookform/resolvers, @jridgewell/trace-mapping, @radix-ui/react-accordion, @radix-ui/react-alert-dialog, @radix-ui/react-aspect-ratio, @radix-ui/react-avatar, @radix-ui/react-checkbox, @radix-ui/react-collapsible, @radix-ui/react-context-menu, @radix-ui/react-dialog, @radix-ui/react-dropdown-menu, @radix-ui/react-hover-card, @radix-ui/react-label, @radix-ui/react-menubar, @radix-ui/react-navigation-menu, @radix-ui/react-popover, @radix-ui/react-progress, @radix-ui/react-radio-group, @radix-ui/react-scroll-area, @radix-ui/react-select, @radix-ui/react-separator, @radix-ui/react-slider, @radix-ui/react-slot, @radix-ui/react-switch, @radix-ui/react-tabs, @radix-ui/react-toast, @radix-ui/react-toggle, @radix-ui/react-toggle-group, @radix-ui/react-tooltip, @tanstack/react-query, @tiptap/extension-color, @tiptap/extension-font-family, @tiptap/extension-highlight, @tiptap/extension-link, @tiptap/extension-table, @tiptap/extension-table-cell, @tiptap/extension-table-header, @tiptap/extension-table-row, @tiptap/extension-text-align, @tiptap/extension-text-style, @tiptap/extension-underline, @tiptap/pm, @tiptap/react, @tiptap/starter-kit, @types/jsonwebtoken, @types/multer, adm-zip, axios, class-variance-authority, clsx, cmdk, connect-pg-simple, date-fns, docx, drizzle-orm, drizzle-zod, embla-carousel-react, express, express-session, framer-motion, html-entities, input-otp, jsonwebtoken, lucide-react, mammoth, memorystore, multer, next-themes, openai, p-limit, p-retry, passport, passport-local, pdf-parse, pdfjs-dist, pg, postcss-selector-parser, react, react-day-picker, react-dom, react-hook-form, react-icons, react-resizable-panels, recharts, tailwind-merge, tailwindcss-animate, tw-animate-css, vaul, wouter, ws, zod, zod-validation-error, @replit/vite-plugin-cartographer, @replit/vite-plugin-dev-banner, @replit/vite-plugin-runtime-error-modal, @tailwindcss/typography, @tailwindcss/vite, @types/connect-pg-simple, @types/express, @types/express-session, @types/node, @types/passport, @types/passport-local, @types/react, @types/react-dom, @types/ws, @vitejs/plugin-react, autoprefixer, drizzle-kit, esbuild, postcss, tailwindcss, tsx, typescript, vite
+
+
+ROTAS DA API (endpoints detectados automaticamente)
+
+GET    /api/conversations  (em server/replit_integrations/audio/routes.ts)
+GET    /api/conversations/:id  (em server/replit_integrations/audio/routes.ts)
+POST   /api/conversations  (em server/replit_integrations/audio/routes.ts)
+DELETE /api/conversations/:id  (em server/replit_integrations/audio/routes.ts)
+POST   /api/conversations/:id/messages  (em server/replit_integrations/audio/routes.ts)
+GET    /api/conversations  (em server/replit_integrations/chat/routes.ts)
+GET    /api/conversations/:id  (em server/replit_integrations/chat/routes.ts)
+POST   /api/conversations  (em server/replit_integrations/chat/routes.ts)
+DELETE /api/conversations/:id  (em server/replit_integrations/chat/routes.ts)
+POST   /api/conversations/:id/messages  (em server/replit_integrations/chat/routes.ts)
+POST   /api/generate-image  (em server/replit_integrations/image/routes.ts)
+GET    /sw.js  (em server/routes.ts)
+GET    /api/auth/check  (em server/routes.ts)
+POST   /api/auth/login  (em server/routes.ts)
+POST   /api/auth/logout  (em server/routes.ts)
+GET    /parecer/:id  (em server/routes.ts)
+GET    /api/tjmg/fatores  (em server/routes.ts)
+POST   /api/pdpj/test-connection  (em server/routes.ts)
+GET    /api/pdpj/status  (em server/routes.ts)
+POST   /api/pdpj/comunicacoes  (em server/routes.ts)
+POST   /api/pdpj/representados  (em server/routes.ts)
+POST   /api/pdpj/habilitacao  (em server/routes.ts)
+POST   /api/pdpj/pessoa  (em server/routes.ts)
+POST   /api/webhooks/tramitacao  (em server/routes.ts)
+GET    /api/demo-key-status  (em server/routes.ts)
+GET    /api/demo-key-config  (em server/routes.ts)
+POST   /api/demo-key-config  (em server/routes.ts)
+GET    /api/perplexity-key-status  (em server/routes.ts)
+POST   /api/demo-key-test  (em server/routes.ts)
+POST   /api/tts  (em server/routes.ts)
+POST   /api/voice-chat  (em server/routes.ts)
+USE    /api  (em server/routes.ts)
+POST   /api/share/parecer  (em server/routes.ts)
+GET    /api/snippets  (em server/routes.ts)
+GET    /api/snippets/:id  (em server/routes.ts)
+POST   /api/snippets  (em server/routes.ts)
+PATCH  /api/snippets/:id  (em server/routes.ts)
+DELETE /api/snippets/:id  (em server/routes.ts)
+GET    /api/custom-actions  (em server/routes.ts)
+POST   /api/custom-actions  (em server/routes.ts)
+PATCH  /api/custom-actions/:id  (em server/routes.ts)
+DELETE /api/custom-actions/:id  (em server/routes.ts)
+GET    /api/ementas  (em server/routes.ts)
+POST   /api/ementas  (em server/routes.ts)
+PATCH  /api/ementas/:id  (em server/routes.ts)
+DELETE /api/ementas/:id  (em server/routes.ts)
+POST   /api/jurisprudencia/buscar  (em server/routes.ts)
+GET    /api/ai-history  (em server/routes.ts)
+POST   /api/ai-history  (em server/routes.ts)
+DELETE /api/ai-history/:id  (em server/routes.ts)
+DELETE /api/ai-history  (em server/routes.ts)
+GET    /api/ai-usage-summary  (em server/routes.ts)
+POST   /api/ai-usage-credit  (em server/routes.ts)
+GET    /api/prompt-templates  (em server/routes.ts)
+POST   /api/prompt-templates  (em server/routes.ts)
+PATCH  /api/prompt-templates/:id  (em server/routes.ts)
+DELETE /api/prompt-templates/:id  (em server/routes.ts)
+GET    /api/doc-templates  (em server/routes.ts)
+POST   /api/doc-templates  (em server/routes.ts)
+PATCH  /api/doc-templates/:id  (em server/routes.ts)
+DELETE /api/doc-templates/:id  (em server/routes.ts)
+POST   /api/doc-templates/upload-docx  (em server/routes.ts)
+POST   /api/export/word-with-template  (em server/routes.ts)
+POST   /api/import/url  (em server/routes.ts)
+POST   /api/upload/extract-text  (em server/routes.ts)
+POST   /api/upload/transcribe  (em server/routes.ts)
+POST   /api/ai/process  (em server/routes.ts)
+POST   /api/ai/refine  (em server/routes.ts)
+POST   /api/export/word  (em server/routes.ts)
+POST   /api/jwt/generate  (em server/routes.ts)
+GET    /api/jwt/status  (em server/routes.ts)
+GET    /api/processos  (em server/routes.ts)
+GET    /api/processos/:id  (em server/routes.ts)
+POST   /api/processos  (em server/routes.ts)
+PATCH  /api/processos/:id  (em server/routes.ts)
+DELETE /api/processos/:id  (em server/routes.ts)
+POST   /api/datajud/consulta  (em server/routes.ts)
+POST   /api/datajud/consulta-oab  (em server/routes.ts)
+GET    /api/corporativo/advogado/cpf/:cpf  (em server/routes.ts)
+GET    /api/corporativo/advogado/oab/:uf/:inscricao  (em server/routes.ts)
+GET    /api/corporativo/magistrados/:tribunal  (em server/routes.ts)
+GET    /api/pdpj/status  (em server/routes.ts)
+POST   /api/pdpj/test-connection  (em server/routes.ts)
+POST   /api/pdpj/comunicacoes  (em server/routes.ts)
+POST   /api/pdpj/representados  (em server/routes.ts)
+POST   /api/pdpj/habilitacao  (em server/routes.ts)
+POST   /api/pdpj/pessoa  (em server/routes.ts)
+GET    /api/datajud/tribunais  (em server/routes.ts)
+POST   /api/cnj/comunicacoes  (em server/routes.ts)
+GET    /api/cnj/comunicacoes/certidao/:hash  (em server/routes.ts)
+GET    /api/settings/:key  (em server/routes.ts)
+PUT    /api/settings/:key  (em server/routes.ts)
+GET    /api/tramitacao/clientes  (em server/routes.ts)
+POST   /api/tramitacao/clientes  (em server/routes.ts)
+GET    /api/tramitacao/clientes/:id  (em server/routes.ts)
+PATCH  /api/tramitacao/clientes/:id  (em server/routes.ts)
+GET    /api/tramitacao/notas  (em server/routes.ts)
+POST   /api/tramitacao/notas  (em server/routes.ts)
+DELETE /api/tramitacao/notas/:id  (em server/routes.ts)
+GET    /api/tramitacao/usuarios  (em server/routes.ts)
+GET    /api/tramitacao/test  (em server/routes.ts)
+GET    /api/tramitacao/publicacoes  (em server/routes.ts)
+POST   /api/tramitacao/sync-publicacoes  (em server/routes.ts)
+PATCH  /api/tramitacao/publicacoes/:id/lida  (em server/routes.ts)
+POST   /api/code/run  (em server/routes.ts)
+POST   /api/previdenciario/extrair  (em server/routes.ts)
+GET    /api/pesquisa/oab  (em server/routes.ts)
+GET    /api/pesquisa/processo  (em server/routes.ts)
+GET    /api/djen/config  (em server/routes.ts)
+PUT    /api/djen/config  (em server/routes.ts)
+GET    /api/djen/clientes  (em server/routes.ts)
+POST   /api/djen/clientes  (em server/routes.ts)
+DELETE /api/djen/clientes/:id  (em server/routes.ts)
+GET    /api/djen/publicacoes  (em server/routes.ts)
+GET    /api/djen/execucoes  (em server/routes.ts)
+POST   /api/djen/executar  (em server/routes.ts)
+POST   /api/djen/gerar-token  (em server/routes.ts)
+POST   /api/code-assistant  (em server/routes.ts)
+POST   /api/git-push  (em server/routes.ts)
+USE    /sw.js  (em server/static.ts)
+USE    /manifest.json  (em server/static.ts)
+USE    /{*path}  (em server/static.ts)
+USE    /{*path}  (em server/vite.ts)
+
+
+SCRIPTS DISPONIVEIS (package.json)
+
+npm run dev           # NODE_ENV=development tsx server/index.ts
+npm run build         # tsx script/build.ts
+npm run start         # NODE_ENV=production node dist/index.cjs
+npm run check         # tsc
+npm run db:push       # drizzle-kit push
+
+
+VARIAVEIS DE AMBIENTE NECESSARIAS
+Crie um arquivo .env na raiz com estas variaveis:
+
+DATABASEURL=seuvalor_aqui
+SESSIONSECRET=seuvalor_aqui
+PORT=seuvaloraqui
+AIINTEGRATIONSOPENAIAPIKEY=seuvaloraqui
+AIINTEGRATIONSOPENAIBASEURL=seuvaloraqui
+PUBLICAPIKEY=seuvaloraqui
+APPPASSWORD=seuvalor_aqui
+AIINTEGRATIONSGEMINIAPIKEY=seuvaloraqui
+AIINTEGRATIONSGEMINIBASEURL=seuvaloraqui
+PDPJPEMPRIVATEKEY=seuvalor_aqui
+PUBLICAPIMODEL=seuvaloraqui
+PUBLICAPIURL=seuvaloraqui
+DATAJUDAPIKEY=seuvaloraqui
+PERPLEXITYAPIKEY=seuvaloraqui
+
+
+ARQUIVOS PRINCIPAIS
+
+client/index.html â Arquivo principal
+client/replit_integrations/audio/index.ts â Arquivo principal
+client/src/App.tsx â Componente raiz do frontend
+client/src/main.tsx â Arquivo principal
+main.py â Aplicacao Python principal
+server/index.ts â Ponto de entrada do backend
+server/replit_integrations/audio/index.ts â Ponto de entrada do backend
+server/replit_integrations/batch/index.ts â Ponto de entrada do backend
+server/replit_integrations/chat/index.ts â Ponto de entrada do backend
+server/replit_integrations/image/index.ts â Ponto de entrada do backend
+
+
+GUIA COMPLETO â O QUE CADA PARTE DO PROJETO FAZ
+
+Esta secao explica, em linguagem simples, o que e para que serve cada pasta e cada arquivo.
+
+ð Raiz do Projeto (pasta principal)
+Arquivos de configuracao e pontos de entrada ficam aqui.
+.gitignore (6 linhas)
+Lista de arquivos/pastas que o Git deve IGNORAR (nao versionar). Ex: node_modules, .env
+
+README.md (3 linhas)
+Documentacao principal do projeto. Explica o que o projeto faz e como rodar.
+
+RELATORIOCORRECOES.md (142 linhas)_
+Arquivo de documentacao em Markdown (texto formatado com #titulos, negrito, listas).
+
+SECURITY.md (22 linhas)
+Arquivo de documentacao em Markdown (texto formatado com #titulos, negrito, listas).
+
+components.json (20 linhas)
+Arquivo de dados ou configuracao no formato JSON (chave: valor).
+
+drizzle.config.ts (15 linhas)
+Configuracao do Drizzle ORM â gerencia a conexao e migracao do banco de dados.
+
+fixbuttons.txt (64 linhas)_
+Arquivo TXT â parte do projeto.
+
+main.py (7 linhas)
+Arquivo Python â codigo de logica ou script de automacao.
+
+package-lock.json (11678 linhas)
+Arquivo de dados ou configuracao no formato JSON (chave: valor).
+
+package.json (142 linhas)
+Registro de dependencias e scripts do projeto. Aqui ficam os comandos (npm run dev, npm start) e os pacotes instalados.
+
+postcss.config.js (7 linhas)
+Configuracao do PostCSS, necessaria para o Tailwind processar os estilos.
+
+pyproject.toml (9 linhas)
+Arquivo TOML â parte do projeto.
+
+replit.md (141 linhas)
+Arquivo de documentacao em Markdown (texto formatado com #titulos, negrito, listas).
+
+tailwind.config.ts (108 linhas)
+Configuracao do Tailwind CSS â a biblioteca de estilos visuais usada no projeto.
+
+tsconfig.json (24 linhas)
+Configuracao do TypeScript. Diz para o computador como interpretar o codigo .ts e .tsx.
+
+vite.config.ts (39 linhas)
+Configuracao do Vite (servidor de desenvolvimento). Define a porta, alias de caminhos e plugins usados.
+
+
+ð client/
+Pasta 'client' â agrupamento de arquivos relacionados.
+index.html (23 linhas)
+Pagina HTML raiz do projeto. E o ponto de entrada que o browser carrega primeiro.
+
+
+ð migrations/
+Historico de alteracoes do banco de dados.
+0000init.sql (141 linhas)_
+Script SQL â contem comandos para criar tabelas, inserir ou consultar dados no banco.
+
+
+ð public/
+Arquivos estaticos: imagens, icones, fontes, arquivos publicos.
+auditoria.html (35 linhas)
+Arquivo HTML â parte do projeto.
+
+
+ð script/
+Pasta 'script' â agrupamento de arquivos relacionados.
+build.ts (71 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+
+ð server/
+Pasta 'server' â agrupamento de arquivos relacionados.
+db.ts (2 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+djen.ts (384 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+index.ts (164 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+routes.ts (5785 linhas)
+Arquivo de ROTAS â define as URLs/enderecos respondidos pelo servidor.
+
+static.ts (30 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+storage.ts (280 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+vite.ts (56 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+
+ð shared/
+Pasta 'shared' â agrupamento de arquivos relacionados.
+schema.ts (267 linhas)
+Arquivo de MODELO â define a estrutura dos dados (tabelas, campos, tipos).
+
+
+ð client/public/
+Arquivos estaticos: imagens, icones, fontes, arquivos publicos.
+auditoria.html (259 linhas)
+Arquivo HTML â parte do projeto.
+
+codigo-formatacao.txt (123 linhas)
+Arquivo TXT â parte do projeto.
+
+favicon.png (7 linhas)
+Arquivo de imagem.
+
+manifest.json (25 linhas)
+Manifesto do PWA â define nome, icone e configuracoes para instalar o app no celular.
+
+sw.js (19 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+
+ð client/src/
+Codigo-fonte principal do projeto. Nao apague esta pasta.
+App.tsx (171 linhas)
+Componente RAIZ do frontend â e o pai de todos os outros componentes. Aqui ficam as rotas principais.
+
+index.css (351 linhas)
+Arquivo de estilos visuais â cores, tamanhos, fontes, espacamentos da interface.
+
+main.tsx (12 linhas)
+Ponto de entrada do React â monta o componente App na pagina HTML.
+
+
+ð migrations/meta/
+Pasta 'meta' â agrupamento de arquivos relacionados.
+0000snapshot.json (871 linhas)_
+Arquivo de dados ou configuracao no formato JSON (chave: valor).
+
+journal.json (13 linhas)_
+Arquivo de dados ou configuracao no formato JSON (chave: valor).
+
+
+ð shared/models/
+Modelos de dados â representacao das tabelas do banco de dados.
+chat.ts (35 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+
+ð client/replit_integrations/audio/
+Pasta 'audio' â agrupamento de arquivos relacionados.
+audio-playback-worklet.js (113 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+audio-utils.ts (37 linhas)
+Funcoes UTILITARIAS â ferramentas reutilizaveis de uso geral no projeto.
+
+index.ts (46 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+useAudioPlayback.ts (106 linhas)
+HOOK React personalizado para gerenciar estado/comportamento de 'audioplayback'.
+
+useVoiceRecorder.ts (53 linhas)
+HOOK React personalizado para gerenciar estado/comportamento de 'voicerecorder'.
+
+useVoiceStream.ts (92 linhas)
+HOOK React personalizado para gerenciar estado/comportamento de 'voicestream'.
+
+
+ð client/src/components/
+Pecas visuais reutilizaveis da interface (botoes, cards, formularios...).
+pwa-install.tsx (86 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+theme-provider.tsx (47 linhas)
+Componente PROVIDER â 'fornece' dados/funcoes para todos os componentes filhos via Context API do React.
+
+theme-toggle.tsx (19 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+tiptap-editor.tsx (542 linhas)
+Componente EDITOR â area de edicao de texto, codigo ou conteudo rico.
+
+
+ð client/src/hooks/
+Hooks React customizados â logica reutilizavel de estado e efeitos.
+use-mobile.tsx (20 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+use-toast.ts (192 linhas)
+HOOK React personalizado para gerenciar estado/comportamento de '-toast'.
+
+
+ð client/src/lib/
+Funcoes auxiliares reutilizaveis em varios lugares do projeto.
+queryClient.ts (58 linhas)
+Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+utils.ts (7 linhas)
+Funcoes UTILITARIAS â ferramentas reutilizaveis de uso geral no projeto.
+
+
+ð client/src/pages/
+Telas completas do app â cada arquivo aqui e uma pagina navegavel.
+auditoria-financeira.tsx (25 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+code-assistant.tsx (1000 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+comparador-juridico.tsx (25 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+comunicacoes-cnj.tsx (403 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+consulta-corporativo.tsx (479 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+consulta-pdpj.tsx (671 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+consulta-processual.tsx (656 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+filtrador.tsx (732 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+jurisprudencia.tsx (3837 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+legal-assistant.tsx (5404 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+legal-assistant.tsx.recovered (3763 linhas)
+Arquivo RECOVERED â parte do projeto.
+
+login.tsx (100 linhas)
+Componente de LOGIN/AUTENTICACAO â tela de entrada com usuario e senha.
+
+not-found.tsx (33 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+painel-processos.tsx (758 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+playground.tsx (1473 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+previdenciario.tsx (770 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+robo-djen.tsx (1053 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+token-generator.tsx (450 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+tramitacao.tsx (828 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+
+ð server/replit_integrations/audio/
+Pasta 'audio' â agrupamento de arquivos relacionados.
+client.ts (275 linhas)
+Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+index.ts (15 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+routes.ts (137 linhas)
+Arquivo de ROTAS â define as URLs/enderecos respondidos pelo servidor.
+
+
+ð server/replit_integrations/batch/
+Pasta 'batch' â agrupamento de arquivos relacionados.
+index.ts (8 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+utils.ts (183 linhas)
+Funcoes UTILITARIAS â ferramentas reutilizaveis de uso geral no projeto.
+
+
+ð server/replit_integrations/chat/
+Pasta 'chat' â agrupamento de arquivos relacionados.
+index.ts (4 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+routes.ts (204 linhas)
+Arquivo de ROTAS â define as URLs/enderecos respondidos pelo servidor.
+
+storage.ts (44 linhas)
+Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+
+ð server/replit_integrations/image/
+Pasta 'image' â agrupamento de arquivos relacionados.
+client.ts (60 linhas)
+Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+index.ts (4 linhas)
+Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+routes.ts (32 linhas)
+Arquivo de ROTAS â define as URLs/enderecos respondidos pelo servidor.
+
+
+ð client/src/components/ui/
+Componentes de UI (interface) basicos e genericos.
+accordion.tsx (57 linhas)
+Componente ACCORDION â secoes que abrem/fecham ao clicar, economizando espaco na tela.
+
+alert-dialog.tsx (140 linhas)
+Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+alert.tsx (60 linhas)
+Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+aspect-ratio.tsx (6 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+avatar.tsx (52 linhas)
+Componente AVATAR â foto ou iniciais do usuario em formato circular.
+
+badge.tsx (39 linhas)
+Componente BADGE (etiqueta) â pequeno indicador com numero ou status (ex: '3 novas mensagens').
+
+breadcrumb.tsx (116 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+button.tsx (63 linhas)
+Componente de BOTAO â elemento clicavel reutilizavel com estilo padrao do projeto.
+
+calendar.tsx (69 linhas)
+Componente CALENDARIO/AGENDA â visualizacao e selecao de datas e eventos.
+
+card.tsx (86 linhas)
+Componente CARD (cartao) â exibe uma informacao em um bloco visual com borda e sombra. Muito usado para listas de items.
+
+carousel.tsx (261 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+chart.tsx (366 linhas)
+Componente de GRAFICO â visualizacao de dados em forma de grafico (barras, linhas, pizza...).
+
+checkbox.tsx (29 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+collapsible.tsx (12 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+command.tsx (152 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+context-menu.tsx (199 linhas)
+CONTEXT do React â mecanismo para compartilhar dados entre componentes sem passar por props.
+
+dialog.tsx (123 linhas)
+Componente DIALOG â caixa de dialogo que exige resposta do usuario (confirmar, cancelar...).
+
+drawer.tsx (119 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+dropdown-menu.tsx (199 linhas)
+Componente de MENU/DROPDOWN â lista de opcoes que aparece ao clicar em um botao.
+
+form.tsx (179 linhas)
+Componente de FORMULARIO â campos de entrada de dados (texto, selecao, etc.) com validacao.
+
+hover-card.tsx (30 linhas)
+Componente CARD (cartao) â exibe uma informacao em um bloco visual com borda e sombra. Muito usado para listas de items.
+
+input-otp.tsx (70 linhas)
+Componente de CAMPO DE ENTRADA â elemento de input com estilo personalizado.
+
+input.tsx (24 linhas)
+Componente de CAMPO DE ENTRADA â elemento de input com estilo personalizado.
+
+label.tsx (25 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+menubar.tsx (257 linhas)
+Componente de MENU/DROPDOWN â lista de opcoes que aparece ao clicar em um botao.
+
+navigation-menu.tsx (129 linhas)
+Componente de NAVEGACAO/CABECALHO â barra superior com logo, menu e links de navegacao.
+
+pagination.tsx (118 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+popover.tsx (30 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+progress.tsx (29 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+radio-group.tsx (43 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+resizable.tsx (46 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+scroll-area.tsx (47 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+select.tsx (161 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+separator.tsx (30 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+sheet.tsx (141 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+sidebar.tsx (728 linhas)
+Componente de BARRA LATERAL â menu ou painel que aparece na lateral da tela.
+
+skeleton.tsx (16 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+slider.tsx (27 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+switch.tsx (28 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+table.tsx (118 linhas)
+Componente de TABELA â exibe dados em linhas e colunas.
+
+tabs.tsx (54 linhas)
+Componente de ABAS â permite alternar entre diferentes secoes de conteudo com clique.
+
+textarea.tsx (23 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+toast.tsx (128 linhas)
+Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+toaster.tsx (34 linhas)
+Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+toggle-group.tsx (62 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+toggle.tsx (44 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+tooltip.tsx (31 linhas)
+Componente React â parte visual reutilizavel da interface do usuario.
+
+
+CONTEXTO PARA IA (copie e cole para continuar o projeto)
+
+Use este bloco para explicar o projeto para qualquer IA ou desenvolvedor:
+
+Projeto: skprojetocompleto (cÃ³pia)
+Tipo: Full-Stack (React + Express)
+Stack: React + Vite, TypeScript, Tailwind CSS, Python, Node.js + Express, PostgreSQL, Drizzle ORM
+Arquivos: 130 | Linhas: ~51.195
+Rotas API: 123 endpoint(s) detectado(s)
+Variaveis de ambiente necessarias: DATABASEURL, SESSIONSECRET, PORT, AIINTEGRATIONSOPENAIAPIKEY, AIINTEGRATIONSOPENAIBASEURL, PUBLICAPIKEY, APPPASSWORD, AIINTEGRATIONSGEMINIAPIKEY, AIINTEGRATIONSGEMINIBASEURL, PDPJPEMPRIVATEKEY, PUBLICAPIMODEL, PUBLICAPIURL, DATAJUDAPIKEY, PERPLEXITYAPIKEY
+Estrutura principal:
+  .gitignore
+  README.md
+  RELATORIO_CORRECOES.md
+  SECURITY.md
+  client/index.html
+  client/public/auditoria.html
+  client/public/codigo-formatacao.txt
+  client/public/favicon.png
+  client/public/manifest.json
+  client/public/sw.js
+  client/replit_integrations/audio/audio-playback-worklet.js
+  client/replit_integrations/audio/audio-utils.ts
+  client/replit_integrations/audio/index.ts
+  client/replit_integrations/audio/useAudioPlayback.ts
+  client/replit_integrations/audio/useVoiceRecorder.ts
+  client/replit_integrations/audio/useVoiceStream.ts
+  client/src/App.tsx
+  client/src/components/pwa-install.tsx
+  client/src/components/theme-provider.tsx
+  client/src/components/theme-toggle.tsx
+  client/src/components/tiptap-editor.tsx
+  client/src/components/ui/accordion.tsx
+  client/src/components/ui/alert-dialog.tsx
+  client/src/components/ui/alert.tsx
+  client/src/components/ui/aspect-ratio.tsx
+  client/src/components/ui/avatar.tsx
+  client/src/components/ui/badge.tsx
+  client/src/components/ui/breadcrumb.tsx
+  client/src/components/ui/button.tsx
+  client/src/components/ui/calendar.tsx
+  client/src/components/ui/card.tsx
+  client/src/components/ui/carousel.tsx
+  client/src/components/ui/chart.tsx
+  client/src/components/ui/checkbox.tsx
+  client/src/components/ui/collapsible.tsx
+  client/src/components/ui/command.tsx
+  client/src/components/ui/context-menu.tsx
+  client/src/components/ui/dialog.tsx
+  client/src/components/ui/drawer.tsx
+  client/src/components/ui/dropdown-menu.tsx
+  client/src/components/ui/form.tsx
+  client/src/components/ui/hover-card.tsx
+  client/src/components/ui/input-otp.tsx
+  client/src/components/ui/input.tsx
+  client/src/components/ui/label.tsx
+  client/src/components/ui/menubar.tsx
+  client/src/components/ui/navigation-menu.tsx
+  client/src/components/ui/pagination.tsx
+  client/src/components/ui/popover.tsx
+  client/src/components/ui/progress.tsx
+  client/src/components/ui/radio-group.tsx
+  client/src/components/ui/resizable.tsx
+  client/src/components/ui/scroll-area.tsx
+  client/src/components/ui/select.tsx
+  client/src/components/ui/separator.tsx
+  client/src/components/ui/sheet.tsx
+  client/src/components/ui/sidebar.tsx
+  client/src/components/ui/skeleton.tsx
+  client/src/components/ui/slider.tsx
+  client/src/components/ui/switch.tsx
+  client/src/components/ui/table.tsx
+  client/src/components/ui/tabs.tsx
+  client/src/components/ui/textarea.tsx
+  client/src/components/ui/toast.tsx
+  client/src/components/ui/toaster.tsx
+  client/src/components/ui/toggle-group.tsx
+  client/src/components/ui/toggle.tsx
+  client/src/components/ui/tooltip.tsx
+  client/src/hooks/use-mobile.tsx
+  client/src/hooks/use-toast.ts
+  client/src/index.css
+  client/src/lib/queryClient.ts
+  client/src/lib/utils.ts
+  client/src/main.tsx
+  client/src/pages/auditoria-financeira.tsx
+  client/src/pages/code-assistant.tsx
+  client/src/pages/comparador-juridico.tsx
+  client/src/pages/comunicacoes-cnj.tsx
+  client/src/pages/consulta-corporativo.tsx
+  client/src/pages/consulta-pdpj.tsx
+  client/src/pages/consulta-processual.tsx
+  client/src/pages/filtrador.tsx
+  client/src/pages/jurisprudencia.tsx
+  client/src/pages/legal-assistant.tsx
+  client/src/pages/legal-assistant.tsx.recovered
+  client/src/pages/login.tsx
+  client/src/pages/not-found.tsx
+  client/src/pages/painel-processos.tsx
+  client/src/pages/playground.tsx
+  client/src/pages/previdenciario.tsx
+  client/src/pages/robo-djen.tsx
+  client/src/pages/token-generator.tsx
+  client/src/pages/tramitacao.tsx
+  components.json
+  drizzle.config.ts
+  fix_buttons.txt
+  main.py
+  migrations/0000_init.sql
+  migrations/meta/0000_snapshot.json
+  migrations/meta/_journal.json
+  package-lock.json
+  package.json
+  postcss.config.js
+  public/auditoria.html
+  pyproject.toml
+  replit.md
+  script/build.ts
+  server/db.ts
+  server/djen.ts
+  server/index.ts
+  server/replit_integrations/audio/client.ts
+  server/replit_integrations/audio/index.ts
+  server/replit_integrations/audio/routes.ts
+  server/replit_integrations/batch/index.ts
+  server/replit_integrations/batch/utils.ts
+  server/replit_integrations/chat/index.ts
+  server/replit_integrations/chat/routes.ts
+  server/replit_integrations/chat/storage.ts
+  server/replit_integrations/image/client.ts
+  server/replit_integrations/image/index.ts
+  server/replit_integrations/image/routes.ts
+  server/routes.ts
+  server/static.ts
+  server/storage.ts
+  server/vite.ts
+  shared/models/chat.ts
+  shared/schema.ts
+  tailwind.config.ts
+  tsconfig.json
+  vite.config.ts
+
+
+Plano gerado pelo SK Code Editor â 15/04/2026, 07:21:02
+
+Ln 82, Col 31
+Sp: 2
+MARKDOWN
+LF
+UTF-8
+
+
+
+
+
+Jasmim
+Digite um comando e pressione Enterâ¦
+âµ
+
+
+
+Arquivos
+
+
+
+
+â¡ Menu Completo
+role para ver mais â
+
+ð Criar Novo App
+
+Wizard com modelos prontos
+
+
+ð¥ Importar ZIP
+
+Abrir arquivo .zip do dispositivo
+
+
+ð¥ Importar TAR.GZ
+
+Abrir arquivo .tar.gz
+
+
+ð¤ Exportar ZIP
+
+Baixar projeto como .zip
+
+
+ð¤ Assistente IA â Jasmim
+
+Converse, peÃ§a cÃ³digo, debug...
+
+
+ð GitHub â Clonar / Enviar
+
+Importar ou exportar para GitHub
+
+
+ð¦ Instalar Biblioteca
+
+npm install, pip install...
+
+
+ðï¸
+ðï¸ Banco de Dados (Neon/Postgres)
+
+Conectar e rodar SQL
+
+
+ð¸ Salvar Checkpoint
+
+Criar ponto de restauraÃ§Ã£o
+
+
+ð HistÃ³rico de Checkpoints
+
+Ver e restaurar versÃµes salvas
+
+
+ð Lista de Tarefas â Taski
+
+Organizar to-dos do projeto
+
+
+ð§ 
+ð§  MemÃ³ria da Jasmim
+
+O que ela sabe sobre vocÃª e o projeto
+
+
+ð Gerar Plano do Projeto
+
+Gera PLANO.md com estrutura e stack
+
+
+ð
+ð Manual do SK Code Editor
+
+Guia completo em portuguÃªs
+
+
+â¹ï¸ Info do Sistema
+
+Gera SISTEMA.md com detalhes tÃ©cnicos
+
+
+ð¾ Salvar Projeto
+
+Salvar estado atual
+
+
+ð Abrir Preview
+
+Visualizar site/app rodando
+
+
+â¬ Abrir Terminal
+
+Rodar comandos bash
+
+
+âï¸ Assistente JurÃ­dico
+
+Consulta jurÃ­dica com IA
+
+
+ð¬ Campo Livre
+
+Chat sem restriÃ§Ãµes
+
+
+ðï¸ Limpar Projeto
+
+Apaga todos os arquivos e volta ao inÃ­cio
+
+GitHub
+
+GitHub
+
+Importar repositÃ³rio
+
+â 249 arquivos importados de "AplicativoMaikon"
+Escolha o repositÃ³rio para importar:
+
+
+maikonadvogadomg-alt/sk-code-editor
+
+SK Code Editor PWA â Campo Livre, Assistente JurÃ­dico, Editor
+
+
+maikonadvogadomg-alt/modelos-ia
+
+
+maikonadvogadomg-alt/modelo-maikon-
+
+
+maikonadvogadomg-alt/chat-web-ia
+
+
+maikonadvogadomg-alt/cdigo-versel
+
+
+maikonadvogadomg-alt/playground-maykon
+
+
+maikonadvogadomg-alt/adaptaes-simples
+
+
+maikonadvogadomg-alt/teste-23
+
+
+maikonadvogadomg-alt/bug
+
+
+maikonadvogadomg-alt/htmlcssjs
+
+Teste zero
+
+
+maikonadvogadomg-alt/pwa-instalvel
+
+Novo
+
+
+maikonadvogadomg-alt/teste
+
+Testando
+
+
+maikonadvogadomg-alt/Skpc-editor-novo
+
+
+maikonadvogadomg-alt/AplicativoMaikon
+
+novo versel
+
+
+maikonadvogadomg-alt/codelens
+
+CodeLens - Editor de codigo pessoal com IA
+
+
+maikonadvogadomg-alt/app-advogado-novo
+
+
+maikonadvogadomg-alt/Assistente-Germine
+
+Assistente jurÃ­dico
+
+
+maikonadvogadomg-alt/versel-App-Jur-dico
+
+App playground mais assistente jurÃ­dico.
+
+
+maikonadvogadomg-alt/assistente-juridico
+
+Assistente Juridico - Plataforma juridica com IA
+
+
+maikonadvogadomg-alt/Codespace
+
+
+maikonadvogadomg-alt/Live-Code-Runner
+
+Clean TypeScript migration of Robo Juridico
+
+
+maikonadvogadomg-alt/GCDWebServer
+
+Turned GCDWebServer into a Swift Package.
+
+
+maikonadvogadomg-alt/textsum
+
+CLI & Python API to easily summarize text-based files with transformers
+
+
+maikonadvogadomg-alt/nvm3
+
+Exportado do CodeLens
+
+
+maikonadvogadomg-alt/Maakku
+
+Exportado do CodeLens
+
+
+maikonadvogadomg-alt/Maakk
+
+Exportado do CodeLens
+
+
+maikonadvogadomg-alt/ollama12
+
+Exportado do CodeLens13
+
+
+maikonadvogadomg-alt/novo-122
+
+Exportado do CodeLen
+
+
+maikonadvogadomg-alt/Novo
+
+Exportado do CodeLens
+
+
+maikonadvogadomg-alt/plicativo
+
+Exportado do CodeLens
+
