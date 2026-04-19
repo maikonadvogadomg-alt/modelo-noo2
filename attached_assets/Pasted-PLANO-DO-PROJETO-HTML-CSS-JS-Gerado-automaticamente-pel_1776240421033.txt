@@ -1,0 +1,596 @@
+PLANO DO PROJETO: HTML/CSS/JS
+Gerado automaticamente pelo SK Code Editor em 15/04/2026, 04:42:54 107 arquivo(s) | ~29.336 linhas de codigo
+
+RESUMO EXECUTIVO
+Tipo de aplicacao: Aplicacao Web Frontend (React)
+Frontend / Stack principal: React, TypeScript
+Versao: 0.0.0
+Para rodar o projeto:
+
+npm install
+ESTRUTURA DE ARQUIVOS
+HTML/CSS/JS/
+âââ artifacts/
+â   âââ api-server/
+â   â   âââ src/
+â   â       âââ lib/
+â   â       â   âââ logger.ts
+â   â       âââ routes/
+â   â       â   âââ ai-chat.ts
+â   â       â   âââ ai-forward.ts
+â   â       â   âââ config.ts
+â   â       â   âââ db.ts
+â   â       â   âââ drive.ts
+â   â       â   âââ exec.ts
+â   â       â   âââ github.ts
+â   â       â   âââ health.ts
+â   â       â   âââ index.ts
+â   â       â   âââ legal-ai.ts
+â   â       â   âââ proxy.ts
+â   â       â   âââ search.ts
+â   â       â   âââ upload.ts
+â   â       â   âââ voice.ts
+â   â       â   âââ workspace.ts
+â   â       âââ app.ts
+â   â       âââ index.ts
+â   âââ code-editor/
+â       âââ src/
+â           âââ components/
+â           â   âââ ui/
+â           â   â   âââ accordion.tsx
+â           â   â   âââ alert-dialog.tsx
+â           â   â   âââ alert.tsx
+â           â   â   âââ aspect-ratio.tsx
+â           â   â   âââ avatar.tsx
+â           â   â   âââ badge.tsx
+â           â   â   âââ breadcrumb.tsx
+â           â   â   âââ button-group.tsx
+â           â   â   âââ button.tsx
+â           â   â   âââ calendar.tsx
+â           â   â   âââ card.tsx
+â           â   â   âââ carousel.tsx
+â           â   â   âââ chart.tsx
+â           â   â   âââ checkbox.tsx
+â           â   â   âââ collapsible.tsx
+â           â   â   âââ command.tsx
+â           â   â   âââ context-menu.tsx
+â           â   â   âââ dialog.tsx
+â           â   â   âââ drawer.tsx
+â           â   â   âââ dropdown-menu.tsx
+â           â   â   âââ empty.tsx
+â           â   â   âââ field.tsx
+â           â   â   âââ form.tsx
+â           â   â   âââ hover-card.tsx
+â           â   â   âââ input-group.tsx
+â           â   â   âââ input-otp.tsx
+â           â   â   âââ input.tsx
+â           â   â   âââ item.tsx
+â           â   â   âââ kbd.tsx
+â           â   â   âââ label.tsx
+â           â   â   âââ menubar.tsx
+â           â   â   âââ navigation-menu.tsx
+â           â   â   âââ pagination.tsx
+â           â   â   âââ popover.tsx
+â           â   â   âââ progress.tsx
+â           â   â   âââ radio-group.tsx
+â           â   â   âââ resizable.tsx
+â           â   â   âââ scroll-area.tsx
+â           â   â   âââ select.tsx
+â           â   â   âââ separator.tsx
+â           â   â   âââ sheet.tsx
+â           â   â   âââ sidebar.tsx
+â           â   â   âââ skeleton.tsx
+â           â   â   âââ slider.tsx
+â           â   â   âââ sonner.tsx
+â           â   â   âââ spinner.tsx
+â           â   â   âââ switch.tsx
+â           â   â   âââ table.tsx
+â           â   â   âââ tabs.tsx
+â           â   â   âââ textarea.tsx
+â           â   â   âââ toast.tsx
+â           â   â   âââ toaster.tsx
+â           â   â   âââ toggle-group.tsx
+â           â   â   âââ toggle.tsx
+â           â   â   âââ tooltip.tsx
+â           â   âââ AIChat.tsx
+â           â   âââ AssistenteJuridico.tsx
+â           â   âââ CampoLivre.tsx
+â           â   âââ CodeEditor.tsx
+â           â   âââ DriveBackupPanel.tsx
+â           â   âââ EditorLayout.tsx
+â           â   âââ FileTree.tsx
+â           â   âââ GitHubPanel.tsx
+â           â   âââ Manual.tsx
+â           â   âââ PackageSearch.tsx
+â           â   âââ Preview.tsx
+â           â   âââ QuickPrompt.tsx
+â           â   âââ RealTerminal.tsx
+â           â   âââ StreamTerminal.tsx
+â           â   âââ TemplateSelector.tsx
+â           â   âââ Terminal.tsx
+â           â   âââ VoiceCard.tsx
+â           â   âââ VoiceMode.tsx
+â           âââ hooks/
+â           â   âââ use-mobile.tsx
+â           â   âââ use-toast.ts
+â           âââ lib/
+â           â   âââ ai-service.ts
+â           â   âââ github-service.ts
+â           â   âââ projects.ts
+â           â   âââ store.ts
+â           â   âââ templates.ts
+â           â   âââ tts-service.ts
+â           â   âââ utils.ts
+â           â   âââ virtual-fs.ts
+â           â   âââ zip-service.ts
+â           âââ App.tsx
+â           âââ index.css
+â           âââ main.tsx
+âââ package.json
+âââ pnpm-workspace.yaml
+STACK TECNOLOGICO DETECTADO
+Frontend: React, TypeScript
+Todos os pacotes (2): typescript, prettier
+ROTAS DA API (endpoints detectados automaticamente)
+USE    /api  (em artifacts/api-server/src/app.ts)
+POST   /ai/chat  (em artifacts/api-server/src/routes/ai-chat.ts)
+POST   /ai/forward  (em artifacts/api-server/src/routes/ai-forward.ts)
+GET    /config  (em artifacts/api-server/src/routes/config.ts)
+POST   /db/neon/create  (em artifacts/api-server/src/routes/db.ts)
+GET    /db/neon/projects  (em artifacts/api-server/src/routes/db.ts)
+POST   /db/neon/credentials  (em artifacts/api-server/src/routes/db.ts)
+POST   /db/execute  (em artifacts/api-server/src/routes/db.ts)
+POST   /db/test-connection  (em artifacts/api-server/src/routes/db.ts)
+GET    /drive/list  (em artifacts/api-server/src/routes/drive.ts)
+POST   /drive/upload  (em artifacts/api-server/src/routes/drive.ts)
+DELETE /drive/delete/:fileId  (em artifacts/api-server/src/routes/drive.ts)
+POST   /exec/npm-install  (em artifacts/api-server/src/routes/exec.ts)
+POST   /exec/run-node  (em artifacts/api-server/src/routes/exec.ts)
+POST   /exec/run-node-vfs  (em artifacts/api-server/src/routes/exec.ts)
+POST   /db/query  (em artifacts/api-server/src/routes/exec.ts)
+POST   /projects/:projectId/exec-stream  (em artifacts/api-server/src/routes/exec.ts)
+GET    /github/user  (em artifacts/api-server/src/routes/github.ts)
+GET    /github/repos  (em artifacts/api-server/src/routes/github.ts)
+POST   /github/repos  (em artifacts/api-server/src/routes/github.ts)
+POST   /github/push  (em artifacts/api-server/src/routes/github.ts)
+DELETE /github/repos/:owner/:repo  (em artifacts/api-server/src/routes/github.ts)
+GET    /healthz  (em artifacts/api-server/src/routes/health.ts)
+USE    /voice  (em artifacts/api-server/src/routes/index.ts)
+POST   /legal/process  (em artifacts/api-server/src/routes/legal-ai.ts)
+POST   /legal/refine  (em artifacts/api-server/src/routes/legal-ai.ts)
+GET    /search  (em artifacts/api-server/src/routes/search.ts)
+GET    /npm-search  (em artifacts/api-server/src/routes/search.ts)
+POST   /upload/extract-text  (em artifacts/api-server/src/routes/upload.ts)
+POST   /transcribe  (em artifacts/api-server/src/routes/voice.ts)
+POST   /speak  (em artifacts/api-server/src/routes/voice.ts)
+GET    /workspace/info  (em artifacts/api-server/src/routes/workspace.ts)
+POST   /workspace/write  (em artifacts/api-server/src/routes/workspace.ts)
+GET    /workspace/read  (em artifacts/api-server/src/routes/workspace.ts)
+GET    /workspace/list  (em artifacts/api-server/src/routes/workspace.ts)
+POST   /workspace/delete  (em artifacts/api-server/src/routes/workspace.ts)
+POST   /workspace/install  (em artifacts/api-server/src/routes/workspace.ts)
+POST   /workspace/run  (em artifacts/api-server/src/routes/workspace.ts)
+POST   /workspace/sync  (em artifacts/api-server/src/routes/workspace.ts)
+GET    /api/items  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /api/items/:id  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /api/items  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /api/health  (em artifacts/code-editor/src/lib/templates.ts)
+USE    /api/auth  (em artifacts/code-editor/src/lib/templates.ts)
+USE    /api/usuarios  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /register  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /login  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /perfil  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /api/provedores  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /api/chat  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /health  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /auth/login  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /auth/registro  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /clientes  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /clientes/:id  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /clientes  (em artifacts/code-editor/src/lib/templates.ts)
+PUT    /clientes/:id  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /processos  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /processos/:id  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /processos  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /audiencias  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /audiencias  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /prazos/proximos  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /dashboard  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /api/registros  (em artifacts/code-editor/src/lib/templates.ts)
+GET    /api/registros/:id  (em artifacts/code-editor/src/lib/templates.ts)
+POST   /api/registros  (em artifacts/code-editor/src/lib/templates.ts)
+PUT    /api/registros/:id  (em artifacts/code-editor/src/lib/templates.ts)
+DELETE /api/registros/:id  (em artifacts/code-editor/src/lib/templates.ts)
+SCRIPTS DISPONIVEIS (package.json)
+npm run preinstall    # sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+npm run build         # pnpm run typecheck && pnpm -r --if-present run build
+npm run typecheck:libs  # tsc --build
+npm run typecheck     # pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+VARIAVEIS DE AMBIENTE NECESSARIAS
+Crie um arquivo .env na raiz com estas variaveis:
+
+LOG_LEVEL=seu_valor_aqui
+DATABASE_URL=seu_valor_aqui
+AI_INTEGRATIONS_OPENAI_BASE_URL=seu_valor_aqui
+AI_INTEGRATIONS_OPENAI_API_KEY=seu_valor_aqui
+PORT=seu_valor_aqui
+ALLOWED_ORIGINS=seu_valor_aqui
+JWT_SECRET=seu_valor_aqui
+JWT_EXPIRES_IN=seu_valor_aqui
+GROQ_API_KEY=seu_valor_aqui
+OPENAI_API_KEY=seu_valor_aqui
+GEMINI_API_KEY=seu_valor_aqui
+ANTHROPIC_API_KEY=seu_valor_aqui
+XAI_API_KEY=seu_valor_aqui
+OPENROUTER_API_KEY=seu_valor_aqui
+PERPLEXITY_API_KEY=seu_valor_aqui
+TELEGRAM_TOKEN=seu_valor_aqui
+ARQUIVOS PRINCIPAIS
+artifacts/api-server/src/app.ts â Ponto de entrada do backend
+artifacts/api-server/src/index.ts â Ponto de entrada do backend
+artifacts/api-server/src/routes/index.ts â Ponto de entrada do backend
+artifacts/code-editor/src/App.tsx â Componente raiz do frontend
+artifacts/code-editor/src/main.tsx â Arquivo principal
+GUIA COMPLETO â O QUE CADA PARTE DO PROJETO FAZ
+Esta secao explica, em linguagem simples, o que e para que serve cada pasta e cada arquivo.
+
+ð Raiz do Projeto (pasta principal)
+Arquivos de configuracao e pontos de entrada ficam aqui.
+
+package.json (33 linhas) Registro de dependencias e scripts do projeto. Aqui ficam os comandos (npm run dev, npm start) e os pacotes instalados.
+
+pnpm-workspace.yaml (160 linhas) Arquivo YAML â parte do projeto.
+
+ð artifacts/api-server/src/
+Codigo-fonte principal do projeto. Nao apague esta pasta.
+
+app.ts (35 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+index.ts (288 linhas) Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+ð artifacts/code-editor/src/
+Codigo-fonte principal do projeto. Nao apague esta pasta.
+
+App.tsx (210 linhas) Componente RAIZ do frontend â e o pai de todos os outros componentes. Aqui ficam as rotas principais.
+
+index.css (167 linhas) Arquivo de estilos visuais â cores, tamanhos, fontes, espacamentos da interface.
+
+main.tsx (6 linhas) Ponto de entrada do React â monta o componente App na pagina HTML.
+
+ð artifacts/api-server/src/lib/
+Funcoes auxiliares reutilizaveis em varios lugares do projeto.
+
+logger.ts (21 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+ð artifacts/api-server/src/routes/
+Definicao das URLs e navegacao do app.
+
+ai-chat.ts (75 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+ai-forward.ts (156 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+config.ts (27 linhas) Arquivo de CONSTANTES/CONFIGURACAO â valores fixos usados em varios lugares do projeto.
+
+db.ts (362 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+drive.ts (108 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+exec.ts (307 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+github.ts (107 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+health.ts (12 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+index.ts (35 linhas) Arquivo INDEX â ponto de entrada da pasta, exporta tudo que esta dentro.
+
+legal-ai.ts (328 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+proxy.ts (62 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+search.ts (63 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+upload.ts (77 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+voice.ts (88 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+workspace.ts (318 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+ð artifacts/code-editor/src/components/
+Pecas visuais reutilizaveis da interface (botoes, cards, formularios...).
+
+AIChat.tsx (2270 linhas) Componente de CHAT/MENSAGENS â interface de conversa em tempo real.
+
+AssistenteJuridico.tsx (1286 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+CampoLivre.tsx (740 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+CodeEditor.tsx (154 linhas) Componente EDITOR â area de edicao de texto, codigo ou conteudo rico.
+
+DriveBackupPanel.tsx (200 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+EditorLayout.tsx (2634 linhas) Componente de LAYOUT â define a estrutura visual da pagina (cabecalho, sidebar, rodape). Envolve outros componentes.
+
+FileTree.tsx (400 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+GitHubPanel.tsx (632 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+Manual.tsx (726 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+PackageSearch.tsx (415 linhas) Componente de BUSCA â campo e logica para filtrar/encontrar conteudo.
+
+Preview.tsx (496 linhas) Componente de PAGINA/TELA â representa uma tela completa navegavel no app.
+
+QuickPrompt.tsx (274 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+RealTerminal.tsx (724 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+StreamTerminal.tsx (539 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+TemplateSelector.tsx (501 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+Terminal.tsx (1516 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+VoiceCard.tsx (427 linhas) Componente CARD (cartao) â exibe uma informacao em um bloco visual com borda e sombra. Muito usado para listas de items.
+
+VoiceMode.tsx (277 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+ð artifacts/code-editor/src/hooks/
+Hooks React customizados â logica reutilizavel de estado e efeitos.
+
+use-mobile.tsx (20 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+use-toast.ts (192 linhas) HOOK React personalizado para gerenciar estado/comportamento de '-toast'.
+
+ð artifacts/code-editor/src/lib/
+Funcoes auxiliares reutilizaveis em varios lugares do projeto.
+
+ai-service.ts (392 linhas) Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+github-service.ts (197 linhas) Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+projects.ts (206 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+store.ts (38 linhas) STORE de estado â gerencia o estado global do app (dados compartilhados entre telas).
+
+templates.ts (4532 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+tts-service.ts (312 linhas) Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+utils.ts (7 linhas) Funcoes UTILITARIAS â ferramentas reutilizaveis de uso geral no projeto.
+
+virtual-fs.ts (200 linhas) Arquivo TypeScript/JavaScript â logica, funcoes ou modulo do projeto.
+
+zip-service.ts (163 linhas) Arquivo de SERVICO/API â funcoes para comunicar com o servidor ou API externa.
+
+ð artifacts/code-editor/src/components/ui/
+Componentes de UI (interface) basicos e genericos.
+
+accordion.tsx (56 linhas) Componente ACCORDION â secoes que abrem/fecham ao clicar, economizando espaco na tela.
+
+alert-dialog.tsx (140 linhas) Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+alert.tsx (60 linhas) Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+aspect-ratio.tsx (6 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+avatar.tsx (51 linhas) Componente AVATAR â foto ou iniciais do usuario em formato circular.
+
+badge.tsx (44 linhas) Componente BADGE (etiqueta) â pequeno indicador com numero ou status (ex: '3 novas mensagens').
+
+breadcrumb.tsx (116 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+button-group.tsx (84 linhas) Componente de BOTAO â elemento clicavel reutilizavel com estilo padrao do projeto.
+
+button.tsx (66 linhas) Componente de BOTAO â elemento clicavel reutilizavel com estilo padrao do projeto.
+
+calendar.tsx (214 linhas) Componente CALENDARIO/AGENDA â visualizacao e selecao de datas e eventos.
+
+card.tsx (77 linhas) Componente CARD (cartao) â exibe uma informacao em um bloco visual com borda e sombra. Muito usado para listas de items.
+
+carousel.tsx (261 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+chart.tsx (368 linhas) Componente de GRAFICO â visualizacao de dados em forma de grafico (barras, linhas, pizza...).
+
+checkbox.tsx (29 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+collapsible.tsx (12 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+command.tsx (154 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+context-menu.tsx (199 linhas) CONTEXT do React â mecanismo para compartilhar dados entre componentes sem passar por props.
+
+dialog.tsx (121 linhas) Componente DIALOG â caixa de dialogo que exige resposta do usuario (confirmar, cancelar...).
+
+drawer.tsx (117 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+dropdown-menu.tsx (202 linhas) Componente de MENU/DROPDOWN â lista de opcoes que aparece ao clicar em um botao.
+
+empty.tsx (105 linhas) Componente de ESTADO VAZIO â exibido quando nao ha dados para mostrar (ex: 'Nenhum resultado encontrado').
+
+field.tsx (245 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+form.tsx (177 linhas) Componente de FORMULARIO â campos de entrada de dados (texto, selecao, etc.) com validacao.
+
+hover-card.tsx (28 linhas) Componente CARD (cartao) â exibe uma informacao em um bloco visual com borda e sombra. Muito usado para listas de items.
+
+input-group.tsx (169 linhas) Componente de CAMPO DE ENTRADA â elemento de input com estilo personalizado.
+
+input-otp.tsx (70 linhas) Componente de CAMPO DE ENTRADA â elemento de input com estilo personalizado.
+
+input.tsx (23 linhas) Componente de CAMPO DE ENTRADA â elemento de input com estilo personalizado.
+
+item.tsx (194 linhas) Componente de ITEM â representa um elemento individual dentro de uma lista ou colecao.
+
+kbd.tsx (29 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+label.tsx (27 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+menubar.tsx (255 linhas) Componente de MENU/DROPDOWN â lista de opcoes que aparece ao clicar em um botao.
+
+navigation-menu.tsx (129 linhas) Componente de NAVEGACAO/CABECALHO â barra superior com logo, menu e links de navegacao.
+
+pagination.tsx (118 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+popover.tsx (32 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+progress.tsx (29 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+radio-group.tsx (43 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+resizable.tsx (46 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+scroll-area.tsx (47 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+select.tsx (160 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+separator.tsx (30 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+sheet.tsx (141 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+sidebar.tsx (728 linhas) Componente de BARRA LATERAL â menu ou painel que aparece na lateral da tela.
+
+skeleton.tsx (16 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+slider.tsx (27 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+sonner.tsx (32 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+spinner.tsx (17 linhas) Componente de CARREGAMENTO â animacao visual que aparece enquanto dados estao sendo buscados.
+
+switch.tsx (28 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+table.tsx (121 linhas) Componente de TABELA â exibe dados em linhas e colunas.
+
+tabs.tsx (54 linhas) Componente de ABAS â permite alternar entre diferentes secoes de conteudo com clique.
+
+textarea.tsx (23 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+toast.tsx (128 linhas) Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+toaster.tsx (34 linhas) Componente de NOTIFICACAO/ALERTA â mensagem temporaria que aparece na tela (ex: 'Salvo com sucesso!').
+
+toggle-group.tsx (62 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+toggle.tsx (44 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+tooltip.tsx (33 linhas) Componente React â parte visual reutilizavel da interface do usuario.
+
+CONTEXTO PARA IA (copie e cole para continuar o projeto)
+Use este bloco para explicar o projeto para qualquer IA ou desenvolvedor:
+
+Projeto: HTML/CSS/JS
+Tipo: Aplicacao Web Frontend (React)
+Stack: React, TypeScript
+Arquivos: 107 | Linhas: ~29.336
+Rotas API: 69 endpoint(s) detectado(s)
+Variaveis de ambiente necessarias: LOG_LEVEL, DATABASE_URL, AI_INTEGRATIONS_OPENAI_BASE_URL, AI_INTEGRATIONS_OPENAI_API_KEY, PORT, ALLOWED_ORIGINS, JWT_SECRET, JWT_EXPIRES_IN, GROQ_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, XAI_API_KEY, OPENROUTER_API_KEY, PERPLEXITY_API_KEY, TELEGRAM_TOKEN
+
+Estrutura principal:
+  artifacts/api-server/src/app.ts
+  artifacts/api-server/src/index.ts
+  artifacts/api-server/src/lib/logger.ts
+  artifacts/api-server/src/routes/ai-chat.ts
+  artifacts/api-server/src/routes/ai-forward.ts
+  artifacts/api-server/src/routes/config.ts
+  artifacts/api-server/src/routes/db.ts
+  artifacts/api-server/src/routes/drive.ts
+  artifacts/api-server/src/routes/exec.ts
+  artifacts/api-server/src/routes/github.ts
+  artifacts/api-server/src/routes/health.ts
+  artifacts/api-server/src/routes/index.ts
+  artifacts/api-server/src/routes/legal-ai.ts
+  artifacts/api-server/src/routes/proxy.ts
+  artifacts/api-server/src/routes/search.ts
+  artifacts/api-server/src/routes/upload.ts
+  artifacts/api-server/src/routes/voice.ts
+  artifacts/api-server/src/routes/workspace.ts
+  artifacts/code-editor/src/App.tsx
+  artifacts/code-editor/src/components/AIChat.tsx
+  artifacts/code-editor/src/components/AssistenteJuridico.tsx
+  artifacts/code-editor/src/components/CampoLivre.tsx
+  artifacts/code-editor/src/components/CodeEditor.tsx
+  artifacts/code-editor/src/components/DriveBackupPanel.tsx
+  artifacts/code-editor/src/components/EditorLayout.tsx
+  artifacts/code-editor/src/components/FileTree.tsx
+  artifacts/code-editor/src/components/GitHubPanel.tsx
+  artifacts/code-editor/src/components/Manual.tsx
+  artifacts/code-editor/src/components/PackageSearch.tsx
+  artifacts/code-editor/src/components/Preview.tsx
+  artifacts/code-editor/src/components/QuickPrompt.tsx
+  artifacts/code-editor/src/components/RealTerminal.tsx
+  artifacts/code-editor/src/components/StreamTerminal.tsx
+  artifacts/code-editor/src/components/TemplateSelector.tsx
+  artifacts/code-editor/src/components/Terminal.tsx
+  artifacts/code-editor/src/components/VoiceCard.tsx
+  artifacts/code-editor/src/components/VoiceMode.tsx
+  artifacts/code-editor/src/components/ui/accordion.tsx
+  artifacts/code-editor/src/components/ui/alert-dialog.tsx
+  artifacts/code-editor/src/components/ui/alert.tsx
+  artifacts/code-editor/src/components/ui/aspect-ratio.tsx
+  artifacts/code-editor/src/components/ui/avatar.tsx
+  artifacts/code-editor/src/components/ui/badge.tsx
+  artifacts/code-editor/src/components/ui/breadcrumb.tsx
+  artifacts/code-editor/src/components/ui/button-group.tsx
+  artifacts/code-editor/src/components/ui/button.tsx
+  artifacts/code-editor/src/components/ui/calendar.tsx
+  artifacts/code-editor/src/components/ui/card.tsx
+  artifacts/code-editor/src/components/ui/carousel.tsx
+  artifacts/code-editor/src/components/ui/chart.tsx
+  artifacts/code-editor/src/components/ui/checkbox.tsx
+  artifacts/code-editor/src/components/ui/collapsible.tsx
+  artifacts/code-editor/src/components/ui/command.tsx
+  artifacts/code-editor/src/components/ui/context-menu.tsx
+  artifacts/code-editor/src/components/ui/dialog.tsx
+  artifacts/code-editor/src/components/ui/drawer.tsx
+  artifacts/code-editor/src/components/ui/dropdown-menu.tsx
+  artifacts/code-editor/src/components/ui/empty.tsx
+  artifacts/code-editor/src/components/ui/field.tsx
+  artifacts/code-editor/src/components/ui/form.tsx
+  artifacts/code-editor/src/components/ui/hover-card.tsx
+  artifacts/code-editor/src/components/ui/input-group.tsx
+  artifacts/code-editor/src/components/ui/input-otp.tsx
+  artifacts/code-editor/src/components/ui/input.tsx
+  artifacts/code-editor/src/components/ui/item.tsx
+  artifacts/code-editor/src/components/ui/kbd.tsx
+  artifacts/code-editor/src/components/ui/label.tsx
+  artifacts/code-editor/src/components/ui/menubar.tsx
+  artifacts/code-editor/src/components/ui/navigation-menu.tsx
+  artifacts/code-editor/src/components/ui/pagination.tsx
+  artifacts/code-editor/src/components/ui/popover.tsx
+  artifacts/code-editor/src/components/ui/progress.tsx
+  artifacts/code-editor/src/components/ui/radio-group.tsx
+  artifacts/code-editor/src/components/ui/resizable.tsx
+  artifacts/code-editor/src/components/ui/scroll-area.tsx
+  artifacts/code-editor/src/components/ui/select.tsx
+  artifacts/code-editor/src/components/ui/separator.tsx
+  artifacts/code-editor/src/components/ui/sheet.tsx
+  artifacts/code-editor/src/components/ui/sidebar.tsx
+  artifacts/code-editor/src/components/ui/skeleton.tsx
+  artifacts/code-editor/src/components/ui/slider.tsx
+  artifacts/code-editor/src/components/ui/sonner.tsx
+  artifacts/code-editor/src/components/ui/spinner.tsx
+  artifacts/code-editor/src/components/ui/switch.tsx
+  artifacts/code-editor/src/components/ui/table.tsx
+  artifacts/code-editor/src/components/ui/tabs.tsx
+  artifacts/code-editor/src/components/ui/textarea.tsx
+  artifacts/code-editor/src/components/ui/toast.tsx
+  artifacts/code-editor/src/components/ui/toaster.tsx
+  artifacts/code-editor/src/components/ui/toggle-group.tsx
+  artifacts/code-editor/src/components/ui/toggle.tsx
+  artifacts/code-editor/src/components/ui/tooltip.tsx
+  artifacts/code-editor/src/hooks/use-mobile.tsx
+  artifacts/code-editor/src/hooks/use-toast.ts
+  artifacts/code-editor/src/index.css
+  artifacts/code-editor/src/lib/ai-service.ts
+  artifacts/code-editor/src/lib/github-service.ts
+  artifacts/code-editor/src/lib/projects.ts
+  artifacts/code-editor/src/lib/store.ts
+  artifacts/code-editor/src/lib/templates.ts
+  artifacts/code-editor/src/lib/tts-service.ts
+  artifacts/code-editor/src/lib/utils.ts
+  artifacts/code-editor/src/lib/virtual-fs.ts
+  artifacts/code-editor/src/lib/zip-service.ts
+  artifacts/code-editor/src/main.tsx
+  package.json
+  pnpm-workspace.yaml
+Plano gerado pelo SK Code Editor â 15/04/2026, 04:42:54
